@@ -1,0 +1,168 @@
+/* ---------- Global Reset + Font ----------
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  min-height: 100vh;
+}
+
+/* ---------- Center App Container ---------- */
+/* .app-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 5rem;
+}
+
+/* ---------- Card Wrapper ---------- */
+/* .converter-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ---------- Heading ---------- */
+/* .converter-card .title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+} */
+
+/* ---------- Input Group ---------- */
+/* .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-group label {
+  font-weight: 500;
+  color: #444;
+}
+
+.input-group input {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25);
+}  */
+
+
+
+/* ---------- Global Reset & Background ---------- */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.app-container {
+  padding-top: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------- Card Wrapper (Glassmorphism) ---------- */
+.converter-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 1.2rem;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  color: #1f2937;
+  transition: all 0.3s ease;
+}
+
+/* Dark Mode Styling */
+.converter-card.dark {
+  background: rgba(0, 0, 0, 0.4);
+  color: #f9fafb;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------- Header Row with Toggle ---------- */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.toggle-btn {
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background: #3b82f6;
+}
+
+/* ---------- Inputs ---------- */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.input-group input {
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #111827;
+  transition: border 0.2s ease;
+}
+
+.converter-card.dark .input-group input {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #f1f5f9;
+  border: 1px solid #555;
+}
+
+.input-group input:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
