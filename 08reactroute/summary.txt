@@ -1,0 +1,9 @@
+| Feature                 | Use Case           | Keyword / Hook       | What it Does                    |
+| ----------------------- | ------------------ | -------------------- | ------------------------------- |
+| Basic Routing           | Main pages         | `Route`, `Link`      | Load components via URL         |
+| Nested Routes           | Layouts/Dashboards | `Outlet`             | Show child routes inside parent |
+| Dynamic Routing         | User/Product page  | `useParams`          | Read values from URL            |
+| Route Params            | Any dynamic path   | `:param`             | Make route accept variables     |
+| Programmatic Navigation | Login, Back button | `useNavigate()`      | Change URL with code            |
+| 404 Page                | Invalid URL        | `path="*"`           | Catch-all for errors            |
+| Protected Routes        | Auth check         | `<ProtectedRoute />` | Redirect if not allowed         |
